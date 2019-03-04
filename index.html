@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulaire d'enquête</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    </head>
+    <body>
+        <div class="form">
+            <h1 id="title">Survey of jobseekers</h1>
+            <p id="description">Dear Madam/Sir,<br>Thank you for visiting our website. By completing this 5-10 min questionnaire, you will help us to improve our services.</p>
+            <form id="survey-form">
+                <div class="section">
+                    <label class="left-side" id="name-label" for="name">What's your name ?</label>
+                    <input id="name" type="text" name="name" placeholder="Type your full name" required>
+                </div>
+                <div class="section">
+                    <label class="left-side" id="email-label" for="email">What is your email address ?</label>
+                    <input id="email" type="email" name="email" placeholder="Type your email" required>
+                </div>
+                <div class="section">
+                    <label class="left-side" id="number-label" for="number">How old are you ?</label>
+                    <input id="number" type="number" name="number" min="15" max="70" placeholder="15" required>
+                </div>
+                <div class="section">
+                    <label class="left-side" for="dropdown">What is your current professional status ? </label>
+                    <select id="dropdown" name="status">
+                        <option value="full-time">Full-time employee</option>
+                        <option value="part-time">Part-time employee</option>
+                        <option value="unemployed">Unemployed person</option>
+                        <option value="entrepreneur">Self-entrepreneur</option>
+                        <option value="student">Student</option>
+                        <option value="retired">Retired person</option>
+                    </select>
+                </div>  
+                <fieldset>
+                    <legend>In which sector would you like to work ?</legend>
+                    <div class="right-side">
+                        <label class="block" for="public"><input type="radio" id="public" name="sector" value="public">Public sector</label>
+                        <label class="block" for="private"><input type="radio" id="private" name="sector" value="private">Private sector</label>
+                        <label class="block" for="self"><input type="radio" id="self" name="sector" value="self">Self-employment</label>
+                    </div>        
+                </fieldset>
+                <fieldset>
+                    <legend>What is the level of your education according to ISCED (International Standard Classification of Education) ?</legend>
+                    <div class="right-side">
+                        <label class="block" for="primary"><input type="radio" id="primary" name="education" value="primary">Primary school</label>
+                        <label class="block" for="secondary-without-bac"><input type="radio" id="secondary-without-bac" name="education" value="secondary-without-bac">Secondary school without baccalaureate</label>
+                        <label class="block" for="secondary-with-bac"><input type="radio" id="secondary-with-bac" name="education" value="secondary-with-bac">Secondary school with baccalaureate</label>
+                        <label class="block" for="post-secondary"><input type="radio" id="post-secondary" name="education" value="post-secondary">Post-secondary education not higher education</label>
+                        <label class="block" for="short-cycle"><input type="radio" id="short-cycle" name="education" value="short-cycle">Higher education in a short cycle</label>
+                        <label class="block" for="bachelor"><input type="radio" id="bachelor" name="education" value="bachelor">Bachelor's degree</label>
+                        <label class="block" for="master"><input type="radio" id="master" name="education" value="master">Master's degree</label>
+                        <label class="block" for="phd"><input type="radio" id="phd" name="education" value="phd">PhD</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>How would you characterize yourself ?</legend>
+                    <div class="right-side">
+                        <label class="block" for="sociable"><input type="checkbox" id="sociable" name="charactar-1" value="sociable">Sociable</label>
+                        <label class="block" for="creative"><input type="checkbox" id="creative" name="charactar-2" value="creative">Creative</label>
+                        <label class="block" for="analytical"><input type="checkbox" id="analytical" name="charactar-3" value="analytical">Analytical</label>
+                        <label class="block" for="shy"><input type="checkbox" id="shy" name="charactar-4" value="shy">Shy</label>
+                        <label class="block" for="reserved"><input type="checkbox" id="reserved" name="charactar-5" value="reserved">Reserved</label>
+                        <label class="block" for="open-minded"><input type="checkbox" id="open-minded" name="charactar-6" value="open-minded">Open-minded</label>
+                        <label class="block" for="collaborative"><input type="checkbox" id="collaborative" name="charactar-7" value="collaborative">Collaborative</label>
+                        <label class="block" for="directive"><input type="checkbox" id="directive" name="charactar-8" value="directive">Directive</label>
+                        <label class="block" for="executive"><input type="checkbox" id="executive" name="charactar-9" value="executive">Executive</label>
+                    </div>
+                </fieldset>
+                <div class="section last">
+                    <label class="left-side" for="message">What kind of job do you find most interesting ?</label>
+                    <div class="right-side">
+                        <textarea name="message" id="message" rows="10" cols="50" placeholder="Type a paragraph"></textarea>
+                    </div>
+                </div>
+                <button type="submit" id="submit">SUBMIT</button>
+            </form>
+        </div>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
